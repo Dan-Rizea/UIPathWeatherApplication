@@ -1,0 +1,375 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WeatherPattern" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="983.2,3763.2" sap2010:WorkflowViewState.IdRef="WeatherPattern_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>DocumentFormat.OpenXml.Drawing</x:String>
+      <x:String>DocumentFormat.OpenXml</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>DocumentFormat.OpenXml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="WeatherPattern" sap:VirtualizedContainerService.HintSize="804,3698.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="GetMailPassword" />
+      <Variable x:TypeArguments="s:String[]" Name="BerlinText">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;}" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractJakartaTable" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractBerlinTable" />
+      <Variable x:TypeArguments="x:Int32" Name="IncrementJakarta">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="2" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Int32" Name="IncrementBerlin">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="2" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="s:String[]" Name="JakartaText">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;}" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Jakarta Weather Browser" sap:VirtualizedContainerService.HintSize="762.4,118.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://myforecast.co/bin/expanded_forecast_15day.m?city=63793&amp;metric=true">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Berlin Weather Browser" sap:VirtualizedContainerService.HintSize="762.4,118.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://myforecast.co/bin/expanded_forecast_15day.m?city=58439&amp;metric=true">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+    <Sequence DisplayName="Data Scraping - Jakarta String Processor" sap:VirtualizedContainerService.HintSize="762.4,1323.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser - Jakarta Weather Page" sap:VirtualizedContainerService.HintSize="720.8,1230.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="45e779bc84e0e3c76505e329a9a8b2f0" Selector="&lt;html app='chrome.exe' title='Jakarta, Jakarta Raya, Indonesia Expanded 15-Day Forecast' /&gt;">
+        <ui:BrowserScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="687.2,1083.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractJakartaTable]" DisplayName="Extract Structured Data 'TABLE' - Jakarta" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="645.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="16" SimulateClick="True">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e380185c-4852-4950-a3ac-d02ea6fc5c23" InformativeScreenshot="c6df5b069e1d2afe10dc948f3d8e5129" Selector="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='25' tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+              <ui:InterruptibleWhile sap2010:Annotation.AnnotationText="This &quot;method&quot;/activity iterates through the Jakarta structured table's rows and, while ignoring the first two in order to capture the correct data, assigns the values of the rest of them in an array of strings. An if condition is applied in order to filter out a blank 24h precipitation total." DisplayName="While" sap:VirtualizedContainerService.HintSize="645.6,843.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="610.4,616" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="GetPrecipitationTotal">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </Variable.Default>
+                      </Variable>
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="568.8,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[GetPrecipitationTotal]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(10), String)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[string.IsNullOrEmpty(GetPrecipitationTotal)]" sap:VirtualizedContainerService.HintSize="568.8,219.2" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[GetPrecipitationTotal]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">["and an indeterminable 24 hour precipitation total."]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Then>
+                      <If.Else>
+                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[GetPrecipitationTotal]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String" xml:space="preserve">["and a 24 hour precipitation total of around ." &amp;  DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(10), String)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Else>
+                    </If>
+                    <Assign sap:VirtualizedContainerService.HintSize="568.8,64" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[JakartaText(IncrementJakarta)]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String" xml:space="preserve">["On " &amp; DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(0), String) &amp;
+" the weather can best be described as: " &amp; DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(2), String) &amp;
+" the temperature will showcase an absolute low of " &amp; DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(4), String) &amp;
+", a high of " &amp; DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(3), String) &amp;
+", a humidity level of  " &amp; DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(6), String) &amp;
+", a precipitation probability of " &amp; DirectCast(ExtractJakartaTable.Rows(IncrementJakarta).Item(9), String) &amp;
+" " &amp; GetPrecipitationTotal]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="568.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[IncrementJakarta]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[IncrementJakarta + 1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+                <ui:InterruptibleWhile.Condition>
+                  <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="IncrementJakarta &lt;= 15" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_6" />
+                </ui:InterruptibleWhile.Condition>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InterruptibleWhile>
+            </Sequence>
+          </ActivityAction>
+        </ui:BrowserScope.Body>
+      </ui:BrowserScope>
+    </Sequence>
+    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="762.4,1294.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'BerlinBer Page'" sap:VirtualizedContainerService.HintSize="720.8,1201.6" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="07bfdc72cd74a9ede357932cbfef01e8" Selector="&lt;html app='chrome.exe' title='Berlin, Berlin, Germany Expanded 15-Day Forecast' /&gt;">
+        <ui:BrowserScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="687.2,1054.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractBerlinTable]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="645.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="16" SimulateClick="True">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1309e32f-6469-4a67-b562-3f814080e5f6" InformativeScreenshot="61f2b328939ed56031ffbaee6a889426" Selector="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='25' tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+              <ui:InterruptibleWhile sap2010:Annotation.AnnotationText="This activity is similar to the previously annotated one, however it handles the Berlin structured data table." DisplayName="While" sap:VirtualizedContainerService.HintSize="645.6,814.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="610.4,616" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="GetPrecipitationTotal" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="568.8,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[GetPrecipitationTotal]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(10), String)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[string.IsNullOrEmpty(GetPrecipitationTotal)]" sap:VirtualizedContainerService.HintSize="568.8,219.2" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[GetPrecipitationTotal]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">["and an indeterminable 24 hour precipitation total."]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Then>
+                      <If.Else>
+                        <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[GetPrecipitationTotal]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String" xml:space="preserve">["and a 24 hour precipitation total of around ." &amp;  DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(10), String)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Else>
+                    </If>
+                    <Assign sap:VirtualizedContainerService.HintSize="568.8,64" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[BerlinText(IncrementBerlin)]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String" xml:space="preserve">["On " &amp; DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(0), String) &amp;
+" the weather can best be described as '" &amp; DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(2), String) &amp; "'" &amp;
+" the temperature will showcase an absolute low of " &amp; DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(4), String) &amp;
+", a high of " &amp; DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(3), String) &amp;
+", a humidity level of  " &amp; DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(6), String) &amp;
+", a precipitation probability of " &amp; DirectCast(ExtractBerlinTable.Rows(IncrementBerlin).Item(9), String) &amp; 
+" " &amp; GetPrecipitationTotal]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="568.8,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[IncrementBerlin]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[IncrementBerlin + 1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+                <ui:InterruptibleWhile.Condition>
+                  <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="IncrementBerlin &lt;= 15" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_7" />
+                </ui:InterruptibleWhile.Condition>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InterruptibleWhile>
+            </Sequence>
+          </ActivityAction>
+        </ui:BrowserScope.Body>
+      </ui:BrowserScope>
+    </Sequence>
+    <ui:GetPassword sap2010:Annotation.AnnotationText="Privately assign the password of the sender account" DisplayName="Private: Get Password" sap:VirtualizedContainerService.HintSize="762.4,66.4" sap2010:WorkflowViewState.IdRef="GetPassword_3" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyqWuuyfsG0SvEDBzZb6DdgAAAAACAAAAAAAQZgAAAAEAACAAAABLh86AMnxZ/LNNauiZFsJgreVrpFl/nSXDP1js25fVOwAAAAAOgAAAAAIAACAAAACI2yRvhfAKvWoZIaZPWXxfhIoV2e9R5rJLSjJ7im+U8xAAAAA54nnJq+3uTniqF6zQSUW9QAAAAHXjwDpSC6HvVSni+LX/0BXjZQMDlN9qm55/l1r6Mdinh1PEr6L/e1m+L7SGuLINLz/v95MZhVprvKhdRu2GddI=" Result="[GetMailPassword]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:GetPassword>
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="This activity sends an email to Jane based upon the results of the string arrays" Body="[&quot;Hello, Jane! I have attached your requested weather report down below.&quot; &amp; vbCrLf &amp; vbCrLf &amp; &quot;The weather situation in Jakarta is looking like this:&quot; &amp; vbCrLf &amp; JakartaText(0) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(1) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(2) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(3) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(4) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(5) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(6) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(7) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(8) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(9) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(10) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(11) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(12) &amp; vbCrLf &amp;&#xD;&#xA;JakartaText(13) &amp; vbCrLf &amp;&#xD;&#xA;&quot;With regards to the situation in Berlin, our data shows that:&quot; &amp; vbCrLf &amp; BerlinText(0) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(1) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(2) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(3) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(4) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(5) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(6) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(7) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(8) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(9) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(10) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(11) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(12) &amp; vbCrLf &amp;&#xD;&#xA;BerlinText(13) &amp; vbCrLf]" DisplayName="Send SMTP Mail Message To Jane" Email="automationtester1463@gmail.com" EnableSSL="True" From="automationtester1463@gmail.com" sap:VirtualizedContainerService.HintSize="762.4,190.4" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="False" Name="Chuck Testa" Password="[GetMailPassword]" Port="25" SecureConnection="Auto" Server="127.0.0.1" Subject="Here is your weather request, Jane!" To="Jane@deefinity.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+      </ui:SendMail.Files>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:SendMail>
+    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Jakarta Weather Browser" sap:VirtualizedContainerService.HintSize="762.4,107.2" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="c85b3b07476ca122a1044dc4913aace2" Selector="&lt;html app='chrome.exe' title='Jakarta, Jakarta Raya, Indonesia Expanded 15-Day Forecast' /&gt;" WaitForReady="INTERACTIVE" />
+    <ui:CloseWindow TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Berlin Weather Browser" sap:VirtualizedContainerService.HintSize="762.4,107.2" sap2010:WorkflowViewState.IdRef="CloseWindow_2" InformativeScreenshot="304a73806553c5eda640578f317bde27" Selector="&lt;html app='chrome.exe' title='Berlin, Berlin, Germany Expanded 15-Day Forecast' /&gt;" WaitForReady="INTERACTIVE" />
+  </Sequence>
+</Activity>
